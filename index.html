@@ -7,21 +7,28 @@
   <body>
     <header>
       <nav class="main-navigation">
-        <a class="main-header-logo">
-          <img src="#" width="111" height="24" alt="
-          Логотип мороженницы 'gllacy'">
+        <a class="main-header-logo" href="#">
+          <img src="img/logo.svg" width="111" height="24" alt="Логотип мороженницы 'gllacy'">
         </a>
         <ul class="syte-navigation">
-          <li><a href="catalog.html">Каталог</a></li>
+          <li><a class="button" href="catalog.html">Каталог</a></li>
           <li><a href="#">Доставка и Оплата</a></li> 
-          <li><a href="info.html">О компании</a></li>
+          <li><a href="#">О компании</a></li>
         </ul>
+        <ul class="user-navigation">
+          <li>
+            <label>
+              <input class="search" type="search" name="search" placeholder="Что ищем?"> 
+            </label>
+          </li>
+          <li class="login-link">
+            <a class="login-link" href="login.html">
+              Вход
+            </a>
+          </li>
+          <li><a class="basket" href="basket.html" aria-label="корзина">корзина</a></li>
+        </ul>  
       </nav>
-      <section>
-        <!-- форма -->
-        <a class="user-navigation">вход</a>
-        <a class="basket">корзина</a>
-      </section>
     </header>
     <main class="contaniar">
       <section class="advantages">
@@ -65,9 +72,72 @@
         <p>Подпишитесь на нашу сладкую рассылкуи будете всегда в курсе
         всего самого вкусного, что у нас происходит. Обещаем не спамить
         и не слать всякой не нужной ерунды.Честно=)</p>
-        <!-- форма     -->
-        <a class="button">отправить</a> 
+        <form class="form-mail">
+          <p>
+            <label>Электронная почта
+              <input type="text" name="mail"> 
+            </label>
+          </p>
+          <button class="button" type="submit">отправить</button> 
+        </form>
       </section>
+      <section class="modal modal-catalog">
+        <ul class="modal-category">
+          <li><a class="category" href="#"><b>Новинки</b></a></li>
+          <li><a class="category" href="creamy.html">Сливочное</a></li>
+          <li><a class="category" href="#">Щербеты</a></li>
+          <li><a class="category" href="#">Фруктовый лед</a></li>
+          <li><a class="category" href="#">Мелорин</a></li>
+        </ul>
+      </section>
+      <section>
+        <form class="mail-form" action="#" method="#">
+          <p>
+            <label>Электронная почта
+              <input type="text" name="mail">  
+            </label>
+          </p>
+          <p>  
+            <label>Пароль
+              <input type="password" name="password">
+            </label>
+          </p>
+          <button class="button" type="submit">
+            Войти
+          </button>    
+        </form>
+        <ul class="info-password-registration">
+          <li><a class="link-info" href="#">Забыли пароль?</a></li>
+          <li><a class="link-info" href="#">Новая регистрация</a></li>
+        </ul>
+      </section>
+      <section class="modal-basket">
+        <button class="button" type="submit">Отправить</button> 
+      </section>
+      <section>
+        <form class="feedback" method="#" action="#">
+          <fieldset>
+            <legend>Мы обязательно вам ответим!</legend>
+            <p>
+              <label>Как вас зовут?
+                <input type="text" name="name"> 
+              </label>
+            </p>
+            <p>
+              <label>Ваша почта для ответа?
+                <input type="text" name="mail"> 
+              </label>
+            </p>
+            <p>
+              <label>Напишите что-нибудь...
+                <input type="text" name="comment" step="5">
+              </label>
+            </p> 
+          </fieldset>
+          <button class="button" type="submit">Отправить</button>   
+        </form>
+        <button class="modal-close" type="button" aria-label="закрыть">закрыть</button>
+      </section> 
     </main>
     <footer class="main-footer">
       <ul class="footer-social">
@@ -76,18 +146,18 @@
         <li><a class="social-button" href="#">фейсбук</a></li>
         <li><a class="social-button" href="#">вконтакте</a></li>
       </ul>
-      <ul class="footer-info">
+       <ul class="footer-info">
         <li><b><a href="#">Для поставщиков</a></b></li>
-        <li><a href="#">О производстве</a><li>
+        <li><a href="#">О производстве</a></li>
         <li><a href="#">Наши документы</a></li>
         <li><a href="#">Экологические стандарты</a></li>
       </ul>
-      <div class="copyright">
-        <a class="logo-academy">
-        <img src="#" alt="логотип академии">
+      <section class="copyright">
+        <a class="logo-academy" href="#">
+        <img src="img/logo-htmlacademy.svg" alt="логотип академии">
         </a>
         <span>сделано в <a href="#">Academy HTML</a> 2019</span>   
-      </div>  
+      </section>  
     </footer>
   </body>
 </html>
