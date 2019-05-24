@@ -1,0 +1,291 @@
+body {
+    margin: 0;
+
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    
+    background-color: #859d8f;
+    background-image: url("img/bg.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+a{
+    text-decoration: none;
+}
+.main-header-logo{
+    padding-top: 9px;
+    padding-left: 27px;
+}
+
+.button {
+    font: inherit;
+
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    border-radius: 15px;
+    box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
+    background-image: linear-gradient(to top, #e74a35, #f26843);
+    border: none;
+}
+.button:hover,
+.button:focus{
+    box-shadow: 0px 2px 2px 0 #ac1000;
+    background-image: linear-gradient(to top, #e74a35, #f26843), linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+}
+.button:active{
+    box-shadow: inset 0px 2px 2px 0 #942718;
+    background-image: linear-gradient(to bottom, #e74a35, #f26843), linear-gradient(to bottom, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07));
+}
+.main-navigation {
+    font-size: 16px;
+    line-height: 1.38;
+    color: #ffffff;
+    
+    background-color: #859d8f;
+}
+.site-navigation a,
+.user-navigation a{  
+    list-style: none;
+    color: #ffffff;
+    text-decoration: underline;
+}
+.site-navigation a:hover{
+    background-color: #f7f6f3;
+    text-decoration: none;
+    color: #323232;
+    font-weight: bold;
+    border-radius: 15px;
+}
+.site-navigation a:focus{
+    box-shadow: inset 0px 2px 1px 0 #696969;
+    background-color: #ededed;
+    text-decoration:  none;
+    color: #323232;
+    font-weight: bold;
+}
+.site-navigation a:active{
+    background-color: #d07058;
+    color: #323232;
+    font-weight: bold;
+}
+.user-navigation a:hover,
+.user-navigation a:focus{
+    color: #323232;
+    font-size: 14px;
+    line-height: 1.13;
+    font-weight: 500;
+    text-align: left;
+    text-decoration: none;
+}
+.user-navigation a:active{
+    background-color: #ffffff;
+
+    color: #323232;
+    font-size: 16px;
+    line-height: 1.13;
+    text-align: left;
+}
+.search{
+    width: 341px;
+    height: 84px;
+    padding: 20px 15px 20px;
+}
+.advantages{
+    color: #323232;
+    text-align: left;
+
+    background-image: url("../img/bg_advantages.jpg");
+    background-repeat: repeat;
+    height: 306;
+    width: 1146;
+    border-radius: 15px;
+    padding: 30px 20px 25px;
+    margin: 41px 27px 40px;
+}
+.advantages-list{
+    list-style: none;
+    columns: 2 34px;
+}
+.advantages-item{
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.38;
+}
+.advantages-header h1{
+    font-size: 24px;
+    line-height: 1.25; 
+}
+.blog-mail{
+    columns: 2;
+}
+.news-blog{
+    list-style: none;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.38;
+    color: #323232;
+    background-image: url("../img/bg_block-new.jpg");
+    background-repeat: no-repeat;
+    padding: 26px 20px;
+    margin: 40px 27px 39px;
+    width: 560px;
+    height: 220px;
+    border-radius: 15px;
+}
+.news-blog a{ 
+    line-height: 1.25;
+    font-size: 24px;
+    font-weight: bold;
+    color: #323232;   
+}
+.sweet-mail{
+    width: 560px;
+    height: 220px;
+    text-align: left;
+    font-size: 16px;
+    color: #5a5a5a;
+    line-height: 1.38;
+    background-image: url("../img/bg_mail.svg");
+    background-repeat: no-repeat;
+    border-radius: 15px 15px;
+    padding: 37px 27px 40px;
+    margin: 40px 27px 39px;
+}
+input {
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: left; 
+    color: #999999;
+    border-radius: 5px;
+    border: solid 1px rgba(178, 178, 178, 0.52);
+    background-color: #ffffff;
+}
+input:hover{
+    font: inherit;
+
+    color: #999999;
+    border: solid 2px rgba(154, 154, 154, 0.52);
+    background-color: #ffffff;
+}
+input:focus{
+    font: inherit;
+
+    color: #999999;
+    border: solid 2px rgba(46, 136, 228, 0.52);
+    background-color: #ffffff;
+}
+input:active{
+    font: inherit;
+
+    font-weight: bold;
+    color: #323232;
+    border: solid 1px rgba(178, 178, 178, 0.52);
+    background-color: #ffffff;
+}
+.main-footer{
+    color: #ffffff;
+    list-style: none;
+    background-color: #859d8f;
+    background-image: url("img/bg.jpg");
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+.footer-social a{
+    list-style: none;
+    text-align: left;
+    font-size: 13px;
+    line-height: 1.38;
+    color: #ffffff;
+}
+.footer-info{
+    text-align: left;
+    font-size: 13px;
+    line-height: 1.38;
+    list-style: none;
+}
+.footer-info a{
+    color: #ffffff;
+    text-decoration: underline;
+}
+.footer-info a:hover,
+.footer-info a:focus{              
+    color: #ffbc9e;
+    text-decoration: underline;;
+}
+.copyright{
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: left;
+}
+.copyright a{
+    color: #ffffff;
+    text-decoration: underline;
+}
+.copyright a:hover,
+.copyright a:focus{
+    color: #ffbc9e;
+    text-decoration: underline;;
+}
+.modal{
+    color: #323232;
+    list-style: none;
+    border-radius: 5.1px;
+    box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+    background-color: #f8f7f4;
+}
+.modal-category{
+    text-decoration: none;
+    width: 143px;
+    height: 171px;
+    color: #323232;
+    background-color: #f8f7f4;
+}
+.mail-form{
+    width: 277px;
+    height: 214px;
+    padding: 20px 18px 27px;
+    list-style: none;
+}
+.mail-form input[type="text"],
+.mail-form input[type="password"]{
+    font: inherit;
+    list-style: none;
+    color: #999999;
+    border-radius: 5px;
+    border: solid 1px rgba(178, 178, 178, 0.52);
+    background-color: #ffffff;
+}
+.mail-form input:focus{
+    font: inherit;
+    color: #999999;
+    border-radius: 5px;
+    border: solid 1px rgba(178, 178, 178, 0.52);
+    background-color: #ffffff;
+}
+.mail-form a{
+    font-size: 13px;
+    color: #323232;
+    text-decoration: underline;
+    line-height: 1.85;
+    text-align: left;
+    list-style: none;
+}
+.mail-form a:hover,
+.mail-form a:focus{
+    color: #e84d37;
+    text-decoration: underline;
+}
+.feedback{
+    width: 478px;
+    height: 443px;
+    border-radius: 10px;
+    background-color: #f8f7f4;
+    color: #323232;
+    font-size:  24px;
+    line-height: 1.17;
+    padding: 20px 24px 20px;
+}
