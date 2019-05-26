@@ -4,13 +4,8 @@ body {
     font-family: "Roboto", Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
-    font-weight: 700;
     color: #ffffff;
-    
     background-color: #859d8f;
-    background-image: url("img/bg.jpg");
-    background-position: top center;
-    background-repeat: no-repeat;
 }
 a{
     text-decoration: none;
@@ -47,46 +42,72 @@ a{
     
     background-color: #859d8f;
 }
+.screw{
+    background-color: #d07058;
+    color: #ffffff;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    list-style: none;
+}
 .site-navigation a,
 .user-navigation a{  
     list-style: none;
     color: #ffffff;
     text-decoration: underline;
+    border-radius: 15px;
 }
-.site-navigation a:hover{
+.site-navigation a:hover
+.site-navigation a:focus{
     background-color: #f7f6f3;
     text-decoration: none;
     color: #323232;
     font-weight: bold;
     border-radius: 15px;
 }
-.site-navigation a:focus{
+.site-navigation a:active{
     box-shadow: inset 0px 2px 1px 0 #696969;
     background-color: #ededed;
-    text-decoration:  none;
     color: #323232;
     font-weight: bold;
+    border-radius: 15px;
+    text-align: left;
 }
-.site-navigation a:active{
-    background-color: #d07058;
+.modal-category{
+    font-size: 14px;
+    text-align: left;
+    line-height: 1.14;
     color: #323232;
-    font-weight: bold;
+    background-color: #f8f7f4;
+    
+}
+.modal-category:hover
+.modal-category:focus{
+    font-size: 14px;
+    text-align: left;
+    line-height: 1.14;
+    color: #323232;
+    background-color: #fbded7;
+}
+.modal-cetegory:active{
+    font-size: 14px;
+    text-align: left;
+    line-height: 1.14;
+    color: #323232;
+    background-color: #d07058;
 }
 .user-navigation a:hover,
 .user-navigation a:focus{
     color: #323232;
     font-size: 14px;
-    line-height: 1.13;
     font-weight: 500;
     text-align: left;
     text-decoration: none;
 }
 .user-navigation a:active{
     background-color: #ffffff;
-
     color: #323232;
     font-size: 16px;
-    line-height: 1.13;
     text-align: left;
 }
 .search{
@@ -118,6 +139,7 @@ a{
 .advantages-header h1{
     font-size: 24px;
     line-height: 1.25; 
+    font-weight: 500;
 }
 .blog-mail{
     columns: 2;
@@ -135,6 +157,7 @@ a{
     width: 560px;
     height: 220px;
     border-radius: 15px;
+    font-weight: 500;
 }
 .news-blog a{ 
     line-height: 1.25;
@@ -288,4 +311,41 @@ input:active{
     font-size:  24px;
     line-height: 1.17;
     padding: 20px 24px 20px;
+}
+.breadcrumbs a{
+    color: #ffffff;
+    text-align: left;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: underline;
+}
+.breadcrumbs a:hover,
+.breadcrumbs a:focus,
+.breadcrumbs a:active{
+    color: #ffbc9e;
+    text-align: left;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: underline;
+}
+.catalog-item p{
+    color: #ffffff;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: underline;
+}
+.catalog-item:hover,
+.catalog-item:focus,
+.catalog-item:active{
+    color: #ffbc9e;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: underline;
+    box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+    background-color: #f8f7f4;
+}
+.photo{
+    border-radius: 50%;
 }

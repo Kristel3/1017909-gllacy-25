@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/stylesheet.css" rel="stylesheet"> 
   </head>
@@ -14,7 +14,17 @@
           <img src="img/logo.svg" width="154" height="64" alt="Логотип мороженницы 'gllacy'">
         </a>
         <ul class="site-navigation">
-          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="catalog.html">Каталог</a>
+            <section class="modal-catalog">
+              <ul class="modal modal-category">
+                <li><a class="screw" href="#"><b>Новинки</b></a></li>
+                <li><a class="screw" href="catalog.html">Сливочное</a></li>
+                <li><a class="screw" href="#">Щербеты</a></li>
+                <li><a class="screw" href="#">Фруктовый лед</a></li>
+                <li><a class="screw" href="#">Мелорин</a></li>
+              </ul>
+            </section>
+          </li>
           <li><a href="#">Доставка и Оплата</a></li> 
           <li><a href="#">О компании</a></li>
         </ul>
@@ -53,7 +63,7 @@
           <li>
             <a class="basket" href="basket.html" aria-label="корзина">пусто</a>
             <section class="modal modal-basket">
-              <button class="button" type="submit">Оформить заказ</button> 
+              <a class="button">Оформить заказ</a> 
             </section>
           </li>  
         </ul>  
@@ -133,15 +143,6 @@
         <span>сделано в <a href="#">Academy HTML</a><span>&copy;</span> 2019</span>   
       </section>  
     </footer>
-    <section class="modal-catalog">
-      <ul class="modal modal-category">
-        <li><a href="#"><b>Новинки</b></a></li>
-        <li><a href="creamy.html">Сливочное</a></li>
-        <li><a href="#">Щербеты</a></li>
-        <li><a href="#">Фруктовый лед</a></li>
-        <li><a href="#">Мелорин</a></li>
-      </ul>
-    </section>
     <section>
       <form class="modal feedback" action="mailto:mother_of_tektonik@mail.ru">
         <legend>Мы обязательно вам ответим!</legend>
