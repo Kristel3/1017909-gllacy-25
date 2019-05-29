@@ -15,13 +15,13 @@
         </a>
         <ul class="site-navigation">
           <li><a href="catalog.html">Каталог</a>
-            <section class="modal-catalog">
-              <ul class="modal modal-category">
-                <li><a class="screw" href="#"><b>Новинки</b></a></li>
-                <li><a class="screw" href="catalog.html">Сливочное</a></li>
-                <li><a class="screw" href="#">Щербеты</a></li>
-                <li><a class="screw" href="#">Фруктовый лед</a></li>
-                <li><a class="screw" href="#">Мелорин</a></li>
+            <section class="pop-up-catalog">
+              <ul class="pop-up pop-up-category">
+                <li><a href="#"><b>Новинки</b></a></li>
+                <li><a href="catalog.html">Сливочное</a></li>
+                <li><a href="#">Щербеты</a></li>
+                <li><a href="#">Фруктовый лед</a></li>
+                <li><a href="#">Мелорин</a></li>
               </ul>
             </section>
           </li>
@@ -29,19 +29,19 @@
           <li><a href="#">О компании</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="modal">
+          <li>
             <form class="search">
               <label>
                 <input type="search" name="search" placeholder="Что ищем?"> 
               </label>
             </form>
           </li>
-          <li class="login-link">
+          <li>
             <a class="login-link" href="login.html">
               Вход
             </a>
-            <section class="modal">
-              <form class="mail-form" action="#">
+            <section class="pop-up mail-form">
+              <form action="#">
                 <p>
                   <label>
                     <input type="text" name="mail" placeholder="Электронная почта">  
@@ -57,13 +57,13 @@
                   <li><a href="#">Забыли пароль?</a></li>
                   <li><a href="#">Новая регистрация</a></li>
                 </ul>
-              </section>
-            </form>
+              </form>
+            </section>
           </li>
           <li>
-            <a class="basket" href="basket.html" aria-label="корзина">пусто</a>
-            <section class="modal modal-basket">
-              <a class="button">Оформить заказ</a> 
+            <a class="basket" href="#" aria-label="корзина">пусто</a>
+            <section class="pop-up-basket">
+              <a class="button" type="submit">Оформить заказ</a> 
             </section>
           </li>  
         </ul>  
@@ -103,8 +103,8 @@
       <article class="news-blog">
         <p>Новое в нашем блоге</p>
         <a href="#">
-        10 способов сервировки</br>
-        фруктовых щербетов к</br>
+        10 способов сервировки
+        фруктовых щербетов к
         столу
         </a>
       </article>  
@@ -125,12 +125,12 @@
     </main>
     <footer class="main-footer">
       <ul class="footer-social">
-        <li><a class="button-social" href="#">твитер</a></li>
-        <li><a class="button-social" href="#">инстаграм</a></li>
-        <li><a class="button-social" href="#">фейсбук</a></li>
-        <li><a class="button-social" href="#">вконтакте</a></li>
+        <li><a href="#">твитер</a></li>
+        <li><a href="#">инстаграм</a></li>
+        <li><a href="#">фейсбук</a></li>
+        <li><a href="#">вконтакте</a></li>
       </ul>
-       <ul class="footer-info">
+      <ul class="footer-info">
         <li><b><a href="#">Для поставщиков</a></b></li>
         <li><a href="#">О производстве</a></li>
         <li><a href="#">Наши документы</a></li>
@@ -144,26 +144,26 @@
       </section>  
     </footer>
     <section>
-      <form class="modal feedback" action="mailto:mother_of_tektonik@mail.ru">
-        <legend>Мы обязательно вам ответим!</legend>
-          <p>
-            <label>
-              <input type="text" name="name" placeholder="Как вас зовут?"> 
-            </label>
-          </p>
-          <p>
-            <label>
-              <input type="text" name="mail" placeholder="Ваша почта для ответа?"> 
-            </label>
-          </p>
-          <p>
-            <label>
-              <input type="text" name="comment" size="5" placeholder="Напишите что-нибудь...">
-            </label>
-          </p> 
-          <button class="button" type="submit">Отправить</button>   
+      <form class="pop-up feedback" action="mailto:mother_of_tektonik@mail.ru">
+        <h2>Мы обязательно вам ответим!</h2>
+        <p>
+          <label>
+            <input type="text" name="name" placeholder="Как вас зовут?"> 
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="text" name="mail" placeholder="Ваша почта для ответа?"> 
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="text" name="comment" size="5" placeholder="Напишите что-нибудь...">
+          </label>
+        </p> 
+        <button class="button" type="submit">Отправить</button>   
       </form>
-      <button class="modal-close" type="button" aria-label="закрыть">закрыть</button>
+      <button class="close" type="button" aria-label="закрыть">закрыть</button>
     </section> 
   </body>
 </html>
