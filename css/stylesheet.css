@@ -9,6 +9,7 @@ body {
 }
 .button  {
     font: inherit;
+    text-decoration: none;
     text-align: center;
     color: #ffffff;
     vertical-align: middle;
@@ -37,6 +38,7 @@ body {
     overflow: hidden;
 }
 a {
+    color: #323232;
     text-decoration: none;
 }
 .main-header-logo {
@@ -49,20 +51,21 @@ a {
     line-height: 1.38;
     color: #ffffff;
 }
-.site-navigation a {
+.site-navigation a:not(.d) {
     font-weight: bold;
     list-style: none;
     text-decoration: underline;
     color: #ffffff;
 }
 .user-navigation a {  
+    font-weight: 500;
     list-style: none;
     color: #ffffff;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 15px;
 }
-.site-navigation a:hover,
-.site-navigation a:focus {
+.site-navigation a:not(.d):hover,
+.site-navigation a:not(.d):focus {
     background-color: #f7f6f3;
     text-decoration: none;
     color: #323232;
@@ -70,12 +73,40 @@ a {
     list-style: none;
     border-radius: 15px;
 }
-.site-navigation a:active {
+.site-navigation a:not(.d):active {
     background-color: #ededed;
     color: #323232;
     font-weight: bold;
     text-align: left;
     list-style: none;
+}
+.site-navigation .d {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.13;
+    text-align: left;
+    color: #ffffff;
+    background-color: #d07058;
+    border-radius: 15px;
+}
+.site-navigation .d:hover,
+.site-navigation .d:focus {
+    font-size: 14px;
+    font-weight: normal;
+    text-align: left;
+    text-decoration: none;
+    line-height: 1.14;
+    color: #323232;
+    background-color: #fbded7;
+    border-radius: 0; 
+}
+.pop-up-catalog{
+    width: 143px;
+    height: 171px;
+    color: #323232;
+    border-radius: 5px;
+    box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+    background-color: #f8f7f4;
 }
 .pop-up-category a{
     font-size: 14px;
@@ -83,8 +114,7 @@ a {
     text-align: left;
     text-decoration: none;
     line-height: 1.14;
-    color: #323232;
-    background-color: #f8f7f4;
+    color: #323232;  
 }
 .pop-up-category a:hover,
 .pop-up-category a:focus {
@@ -97,7 +127,6 @@ a {
     background-color: #fbded7;
     border-radius: 0;
 }
-
 .pop-up-cetegory a:active {
     font-size: 14px;
     font-weight: normal;
@@ -106,9 +135,17 @@ a {
     line-height: 1.14;
     color: #323232;
     background-color: #f6b5a5;
-    border-radius: 0;
 }
-.screw a {
+.screw a{
+    font-size: 14px;
+    font-weight: normal;
+    text-align: left;
+    text-decoration: none;
+    line-height: 1.14;
+    color: #323232;
+}
+.screw a:hover,
+.screw a:focus {
     font-size: 14px;
     font-weight: normal;
     text-align: left;
@@ -116,8 +153,7 @@ a {
     line-height: 1.14;
     color: #ffffff;
     background-color: #d07058;
-    border-radius: 0;
-}  
+}   
 .user-navigation a:hover,
 .user-navigation a:focus {
     font-size: 14px;
@@ -125,9 +161,12 @@ a {
     text-align: left;
     text-decoration: none;
     color: #323232;
+    background-color: #f8f7f4;
 }
 .user-navigation a:active {
-    background-color: #ffffff;
+    font-weight: 500;
+    box-shadow: inset 0px 2px 1px 0 #696969;
+    background-color: #ededed;
     color: #323232;
     font-size: 16px;
     text-align: left;
@@ -143,12 +182,6 @@ a {
 .search input[type="search"] {
     width: 311px;
     height: 44px;
-}
-.pop-up-basket {
-    width: 540px;
-    border-radius: 5px;
-    box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
-    background-color: #f8f7f4;
 }
 .advantages {
     color: #323232;
@@ -171,7 +204,7 @@ a {
     line-height: 1.38;
     text-align: left;
 }
-.advantages-header h1 {
+.advantages-header {
     font-size: 24px;
     line-height: 1.25; 
     font-weight: 500;
@@ -208,18 +241,21 @@ a {
     font-weight: bold;
     color: #e84d37;
 }
-.sweet-mail {
+.cover {
     width: 560px;
-    height: 220px;
+    height: 220px; 
+    background-image: url("../img/bg_mail.svg");
+    background-repeat: no-repeat;
+    border-radius: 15px 15px;
+}
+.sweet-mail {   width: 549px;
+  height: 211px;
+  border-radius: 10px;
+  background-color: #f8f7f4;
     text-align: left;
     font-size: 16px;
     color: #5a5a5a;
     line-height: 1.38;
-    background-image: url("../img/bg_mail.svg");
-    background-repeat: no-repeat;
-    border-radius: 15px 15px;
-    padding: 37px 27px 40px;
-    margin: 40px 27px 39px;
 }
 input {
     font-size: 14px;
@@ -289,24 +325,12 @@ input:focus {
     color: #ffbc9e;
     text-decoration: underline;;
 }
-.pop-up {
-    color: #323232;
-    list-style: none;
-    border-radius: 5px;
-    box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
-    background-color: #f8f7f4;
-}
-.pop-up-category {
-    width: 143px;
-    height: 171px;
-    text-decoration: none;
-    color: #323232;
-    background-color: #f8f7f4;
-}
 .mail-form {
-    padding: 20px 18px 27px;
     width: 277px;
     height: 214px;
+    border-radius: 5.1px;
+    box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+    background-color: #f8f7f4;
     list-style: none;
 }
 .mail-form input[type="text"],
