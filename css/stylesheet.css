@@ -1,5 +1,7 @@
 body {
-    margin: 0;
+    min-width: 1200px;
+    min-height: 2461px;
+    margin: 0 auto;
 
     font-family: "Roboto", Arial, sans-serif;
     font-size: 16px;
@@ -13,7 +15,7 @@ body {
     text-align: center;
     color: #ffffff;
     vertical-align: middle;
-    border-radius: 15px;
+    border-radius: 20px;
     box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
     background-image: linear-gradient(to top, #e74a35, #f26843);
     border: none;
@@ -26,6 +28,40 @@ body {
 .button:active {
     box-shadow: inset 0px 2px 2px 0 #942718;
     background-image: linear-gradient(to bottom, #e74a35, #f26843), linear-gradient(to bottom, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07));
+}
+input {
+    width: 100%;
+    padding: 15px;
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: left; 
+    color: #999999;
+    background-color: #ffffff;
+    border: solid 1px rgba(178, 178, 178, 0.52);
+    border-radius: 5px;
+}
+input:hover {
+    width: 100%;
+    padding: 14px;
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: left; 
+    color: #999999;
+    background-color: #ffffff;
+    border: solid 2px rgba(154, 154, 154, 0.52);
+    border-radius: 5px;
+}
+input:focus {
+    width: 100%;
+    padding: 14px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.71;
+    text-align: left; 
+    color: #323232;
+    background-color: #ffffff;
+    border: solid 2px rgba(46, 136, 228, 0.52);
+    border-radius: 5px;
 }
 .visually-hidden {
     position: absolute;
@@ -41,39 +77,53 @@ a {
     color: #323232;
     text-decoration: none;
 }
+.main-navigation {
+    display: flex;
+    align-items: center;
+    width: 1146px;
+    margin: 0 auto;
+    
+     
+}
 .main-header-logo {
-    padding-top: 9px;
-    padding-left: 27px;
+    align-self: flex-start;
+    width: 154px;
+    height: 64px;
+    margin-right: 25px;
 }
 .main-navigation li{
-    list-style-type:none;
+    list-style-type: none;
     font-size: 16px;
     line-height: 1.38;
     color: #ffffff;
 }
+.site-navigation {
+    width: 699px;
+    display: flex;
+   
+}
 .site-navigation a:not(.d) {
+    /* margin: 0; */
+    margin-right: 25px;
     font-weight: bold;
     list-style: none;
     text-decoration: underline;
     color: #ffffff;
 }
-.user-navigation a {  
-    font-weight: 500;
-    list-style: none;
-    color: #ffffff;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 15px;
-}
 .site-navigation a:not(.d):hover,
 .site-navigation a:not(.d):focus {
+    margin-right: 13px;
+    padding: 6px;
     background-color: #f7f6f3;
     text-decoration: none;
     color: #323232;
     font-weight: bold;
     list-style: none;
-    border-radius: 15px;
+    border-radius: 20px;
 }
 .site-navigation a:not(.d):active {
+    margin-right: 13px;
+    padding: 6px;
     background-color: #ededed;
     color: #323232;
     font-weight: bold;
@@ -81,66 +131,107 @@ a {
     list-style: none;
 }
 .site-navigation .d {
+    margin-right: 13px;
+    padding: 6px;
     font-size: 16px;
     font-weight: bold;
     line-height: 1.13;
     text-align: left;
     color: #ffffff;
     background-color: #d07058;
-    border-radius: 15px;
+    border-radius: 20px;
 }
-.site-navigation .d:hover,
-.site-navigation .d:focus {
+.user-navigation {
+    width: 293px;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.user-navigation a {
+    padding: 6px;
+    margin-left: 10px;
     font-size: 14px;
-    font-weight: normal;
+    font-weight: 500;
+    list-style: none;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+}
+.user-navigation .login-link {
+    text-align: right;
+}
+.user-navigation a:hover,
+.user-navigation a:focus {
+    padding: 6px;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 500;
     text-align: left;
     text-decoration: none;
-    line-height: 1.14;
     color: #323232;
-    background-color: #fbded7;
-    border-radius: 0; 
+    background-color: #f8f7f4;
 }
+.user-navigation a:active {
+    margin-left: 10px;
+    padding: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: inset 0px 2px 1px 0 #696969;
+    background-color: #ededed;
+    color: #323232;
+    text-align: left;
+}
+
 .pop-up-catalog{
-    width: 143px;
+    width: 144px;
     height: 171px;
     color: #323232;
     border-radius: 5px;
     box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
     background-color: #f8f7f4;
 }
-.pop-up-category a{
+.pop-up-category {
+    padding-left: 0;
+    padding-top: 5px;
+    list-style-type: none;
     font-size: 14px;
     font-weight: normal;
-    text-align: left;
-    text-decoration: none;
     line-height: 1.14;
     color: #323232;  
 }
-.pop-up-category a:hover,
-.pop-up-category a:focus {
-    font-size: 14px;
-    font-weight: normal;
+.pop-up-category hr {
+    height: 1px;
+    border: none;
+    background-color: #5a5a5a;
+    margin: 5px 8px;
+}
+.pop-up-category li {
+    display: block;
+    box-sizing: border-box;
+    width: 144px;
+    height: 28px;
+    padding-top: 7px;
     text-align: left;
-    text-decoration: none;
-    line-height: 1.14;
+    color: #323232; 
+}
+.pop-up-category li:hover,
+.pop-up-category li:focus {
+    display: block;
+    box-sizing: border-box;
+    width: 144px;
+    height: 28px;
+    padding-top: 7px;
+    text-align: left;
     color: #323232;
     background-color: #fbded7;
-    border-radius: 0;
 }
-.pop-up-cetegory a:active {
-    font-size: 14px;
-    font-weight: normal;
-    text-align: left;
-    text-decoration: none;
-    line-height: 1.14;
-    color: #323232;
-    background-color: #f6b5a5;
+.pop-up-category a {
+    margin-left: 20px;   
 }
 .screw a{
     font-size: 14px;
     font-weight: normal;
     text-align: left;
-    text-decoration: none;
     line-height: 1.14;
     color: #323232;
 }
@@ -154,80 +245,80 @@ a {
     color: #ffffff;
     background-color: #d07058;
 }   
-.user-navigation a:hover,
-.user-navigation a:focus {
-    font-size: 14px;
-    font-weight: 500;
-    text-align: left;
-    text-decoration: none;
-    color: #323232;
-    background-color: #f8f7f4;
-}
-.user-navigation a:active {
-    font-weight: 500;
-    box-shadow: inset 0px 2px 1px 0 #696969;
-    background-color: #ededed;
-    color: #323232;
-    font-size: 16px;
-    text-align: left;
-}
+
 .search {
+    display: block;
+    box-sizing: border-box;
     width: 341px;
-    height: 84px;
+    padding: 20px 15px;   
     color: #999999;
     background-color: #f8f7f4;
     border-radius: 5px;
     box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);  
 }
-.search input[type="search"] {
-    width: 311px;
-    height: 44px;
+.contaniar {
+    display: flex;
+    flex-direction: column; 
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 27px;
+    
 }
 .advantages {
+    padding: 30px 20px 5px;
+    margin-bottom: 40px;
     color: #323232;
-    text-align: left;
     background-image: url("../img/bg_advantages.jpg");
     background-repeat: repeat;
-    height: 306;
-    width: 1146;
+    width: 1146px;
     border-radius: 15px;
-    padding: 30px 20px 25px;
-    margin: 41px 27px 40px;
 }
 .advantages-list {
+    margin-top: 25px;
     list-style: none;
-    columns: 2 34px;
+    columns: 2 475px;
+    column-gap: 90px;
 }
 .advantages-item {
+    margin-bottom: 25px;
     font-size: 16px;
     font-weight: normal;
     line-height: 1.38;
     text-align: left;
 }
 .advantages-header {
+    width: 1013px;
     font-size: 24px;
     line-height: 1.25; 
     font-weight: 500;
 }
 .blog-mail {
-    columns: 2;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  
 }
 .news-blog {
-    list-style: none;
+    background: url("../img/bg_block-new.jpg") no-repeat;
+    border-radius: 15px;
+    width: 560px;
+    height: 220px;
+    background-origin: border-box; 
+}   
+.news-blog p {
+    margin: 26px 20px 13px;
     text-align: left;
     font-size: 16px;
     line-height: 1.38;
     color: #323232;
-    background-image: url("../img/bg_block-new.jpg");
-    background-repeat: no-repeat;
-    padding: 26px 20px;
-    margin: 40px 27px 39px;
-    width: 560px;
-    height: 220px;
-    border-radius: 15px;
-    font-weight: 500;
+    font-weight: 500; 
 }
-.news-blog a { 
+.news-blog a {
+    margin: 0 20px; 
+    display: block;
+    box-sizing: border-box;
+    width: 285px;
+    text-decoration: underline;
     line-height: 1.25;
     font-size: 24px;
     font-weight: bold;
@@ -242,61 +333,60 @@ a {
     color: #e84d37;
 }
 .cover {
+  
     width: 560px;
     height: 220px; 
-    background-image: url("../img/bg_mail.svg");
-    background-repeat: no-repeat;
-    border-radius: 15px 15px;
+    background: url("../img/bg_mail.svg") no-repeat;  
 }
-.sweet-mail {   width: 549px;
-  height: 211px;
-  border-radius: 10px;
-  background-color: #f8f7f4;
+.sweet-mail {
+    width: 549px;
+    height: 211px;
+    border-radius: 10px;
+    background-color: #f8f7f4;
+    margin-bottom: 10px;
+}
+.sweet-mail p{  
+    width: 506px;
     text-align: left;
     font-size: 16px;
     color: #5a5a5a;
     line-height: 1.38;
 }
-input {
-    font-size: 14px;
-    line-height: 1.71;
-    text-align: left; 
-    color: #999999;
-    background-color: #ffffff;
-    border: solid 1px rgba(178, 178, 178, 0.52);
-    border-radius: 5px;
+
+.sweet-mail .button {
+    width: 129px;
+    height: 44px;
+
 }
-input:hover {
-    font-size: 14px;
-    line-height: 1.71;
-    text-align: left; 
-    color: #999999;
-    background-color: #ffffff;
-    border: solid 2px rgba(154, 154, 154, 0.52);
-    border-radius: 5px;
-}
-input:focus {
-    font-size: 14px;
-    font-weight: bold;
-    line-height: 1.71;
-    text-align: left; 
-    color: #323232;
-    background-color: #ffffff;
-    border: solid 2px rgba(46, 136, 228, 0.52);
-    border-radius: 5px;
+.sweet-mail input[type="text"] {
+    width: 368px;
+    float: left;
+    margin-right: 11px;
 }
 .main-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    min-height: 103px;
+    padding: 0 27px;
+    margin: 0 auto;
     color: #ffffff;
     background-color: #859d8f;
 }
 .footer-social {
+    display: flex;
     font-size: 13px;
     list-style: none;
     text-align: left;
     line-height: 1.38;
     color: #ffffff;
 }
+.footer-social li{
+    margin: auto 8px;
+}
 .footer-info {
+    display: flex;
+    flex-direction: column;
     text-align: left;
     font-size: 13px;
     line-height: 1.38;
@@ -305,20 +395,26 @@ input:focus {
 .footer-info a {
     color: #ffffff;
     text-decoration: underline;
+    text-align: left;
+   
 }
 .footer-info a:hover,
 .footer-info a:focus {              
     color: #ffbc9e;
-    text-decoration: underline;;
+    text-decoration: underline;
+    
 }
 .copyright {
+    display: flex;
+    flex-direction: column;
+    
     font-size: 12px;
     line-height: 1.5;
     text-align: left;
 }
 .copyright a {
     color: #ffffff;
-    text-decoration: underline;
+    text-decoration: underline;   
 }
 .copyright a:hover,
 .copyright a:focus {
@@ -328,37 +424,34 @@ input:focus {
 .mail-form {
     width: 277px;
     height: 214px;
-    border-radius: 5.1px;
+    padding: 20px;
+    border-radius: 5px;
     box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
-    background-color: #f8f7f4;
-    list-style: none;
+    background-color: #f8f7f4;   
 }
-.mail-form input[type="text"],
-.mail-form input[type="password"] {
-    font: inherit;
-    list-style: none;
-    color: #999999;
-    border-radius: 5px;
-    border: solid 1px rgba(178, 178, 178, 0.52);
-    background-color: #ffffff;
+.mail-form p {
+    width: 241px;
+    height: 44px;
+    margin: 0 0 40px;
 }
-.mail-form input:focus {
-    font: inherit;
-    color: #999999;
-    border-radius: 5px;
-    border: solid 1px rgba(178, 178, 178, 0.52);
-    background-color: #ffffff;
+.mail-form .button {
+    float: left;
+    margin-right: 20px;
+    width: 100px;
+    height: 44px;
 }
-.mail-form a {
+.login-link {
+    list-style-type: none;
+}
+.login-link a {
     font-size: 13px;
     color: #323232;
     text-decoration: underline;
     line-height: 1.85;
     text-align: left;
-    list-style: none;
 }
-.mail-form a:hover,
-.mail-form a:focus {
+.login-link a:hover,
+.login-link a:focus {
     color: #e84d37;
     text-decoration: underline;
 }
@@ -368,12 +461,71 @@ input:focus {
     border-radius: 10px;
     background-color: #f8f7f4;
     color: #323232;
+    padding: 20px;
+}
+.feedback h2{
     font-size:  24px;
     line-height: 1.17;
-    padding: 20px 24px 20px;
+    font-weight: 500;
+    text-align: left;
+}
+.feedback input[name="name"],
+.feedback input[name="mail"] {
+    width: 267px;
+    margin-bottom: 20px; 
+    padding: 13px;
+}
+.feedback input[name="comment"]{
+    width: 428px;
+    height: 155px;
+    text-align: top;
+    padding: 13px;
+}
+.feedback input[type="text"]:hover,
+.feedback input[type="text"]:focus {
+    padding: 12px;
+}
+.feedback .button {
+    padding: 14px;
+    float: right;
+}
+.close {
+    float: right;
+}
+.basket {
+    padding: 13px;
+}
+.name-category {
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 1.17;
+    text-align: left;
+}
+.breadcrumbs div {
+    display: flex;
+    flex-direction: column;
+}
+.contacts {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.14;
+    text-align: right;
+}
+.time-job {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.09;
+    text-align: right;
 }
 .breadcrumbs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.breadcrumbs ul{
     list-style: none;
+    display: flex;
+    
 }
 .breadcrumbs a {
     color: #ffffff;
@@ -393,10 +545,18 @@ input:focus {
 }
 .catalog-list {
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
 }
 .catalog-item {
     width: 293px;
     height: 405px;
+
+}
+.photo {
+    border-radius: 50%;
 }
 .catalog-item p {
     color: #ffffff;
@@ -417,20 +577,14 @@ input:focus {
     background-color:  rgba(255, 255, 255, 0.2);
     box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);   
 }
-.photo {
-    border-radius: 50%;
-}
-.price {
+.price {  
     width: 75px;
     height: 34px;
     text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
     font-family: Roboto;
     font-size: 45px;
     font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
     line-height: 1;
-    letter-spacing: normal;
     text-align: left;
     color: #ffffff;
 }

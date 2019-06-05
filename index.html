@@ -14,59 +14,58 @@
           <img src="img/logo.svg" width="154" height="64" alt="Логотип мороженницы 'gllacy'">
         </a>
         <ul class="site-navigation">
-          <li><a href="catalog.html">Каталог</a>
-          </li>
+          <li><a href="catalog.html">Каталог</a></li>
           <li><a href="#">Доставка и Оплата</a></li> 
           <li><a href="#">О компании</a></li>
         </ul>
-        <section class="pop-up-catalog">
-          <ul class="pop-up-category">
-            <li><a href="#"><b>Новинки</b></a></li>
-            <li><a href="catalog.html">Сливочное</a></li>
-            <li><a href="#">Щербеты</a></li>
-            <li><a href="#">Фруктовый лед</a></li>
-            <li><a href="#">Мелорин</a></li>
-          </ul>
-        </section>
         <ul class="user-navigation">
           <li>
-            <form class="search">
-              <label>
-                <input type="search" name="search" placeholder="Что ищем?"> 
-              </label>
-            </form>
+            <a href="#">Поиск</a>
           </li>
           <li>
-            <a class="login-link" href="login.html">
-              Вход
-            </a>
-            <section class="mail-form">
-              <form action="#">
-                <p>
-                  <label>
-                    <input type="text" name="mail" placeholder="Электронная почта">  
-                  </label>
-                </p>
-                <p>  
-                  <label>
-                    <input type="password" name="password" placeholder="Пароль">
-                  </label>
-                </p>
-                <button class="button" type="submit">Войти</button>    
-                <ul>
-                  <li><a href="#">Забыли пароль?</a></li>
-                  <li><a href="#">Новая регистрация</a></li>
-                </ul>
-              </form>
-            </section>
+            <a href="login.html">Вход</a>
           </li>
           <li>
-            <a class="basket" href="#" aria-label="корзина">пусто</a>
-            <a class="button" href="#">Оформить заказ</a> 
+            <a class="basket" href="#" aria-label="корзина">Пусто</a>
           </li>  
         </ul>  
       </nav>
+      <section class="pop-up-catalog">
+        <ul class="pop-up-category">
+          <li><a href="#"><b>Новинки</b></a></li>
+          <hr>
+          <li><a href="catalog.html">Сливочное</a></li>
+          <li><a href="#">Щербеты</a></li>
+          <li><a href="#">Фруктовый лед</a></li>
+          <li><a href="#">Мелорин</a></li>
+        </ul>
+      </setion>
+        <form class="search">
+          <label>
+            <input type="search" name="search" placeholder="Что ищем?"> 
+          </label>
+        </form>
+      <section class="mail-form">
+        <form action="#">
+          <p>
+            <label>
+              <input type="text" name="mail" placeholder="Электронная почта">  
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="password" name="password" placeholder="Пароль">
+            </label>
+          </p>
+          <button class="button" type="submit">Войти</button>    
+          <ul class="login-link">
+            <li><a href="#">Забыли пароль?</a></li>
+            <li><a href="#">Новая регистрация</a></li>
+          </ul>
+        </form>
+      </section>
     </header>
+    
     <main class="contaniar">
       <section class="advantages">
         <h1 class="advantages-header">Магазин Глэйси - это онлайн-
@@ -98,26 +97,26 @@
         </ul>
       </section> 
       <div class="blog-mail">  
-      <article class="news-blog">
-        <p>Новое в нашем блоге</p>
-        <a href="#">
-        10 способов сервировки
-        фруктовых щербетов к
-        столу
-        </a>
+     
+        <article class="news-blog">
+          <p>Новое в нашем блоге</p>
+          <a href="#">
+          10 способов сервировки
+          фруктовых щербетов к
+          столу
+          </a>
+       
       </article>
       <div class="cover">
       <section class="sweet-mail">
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе
         всего самого вкусного, что у нас происходит. Обещаем не спамить
         и не слать всякой не нужной ерунды.Честно=)</p>
-        <form class="form-mail">
-          <p>
-            <label>Электронная почта
-              <input type="text" name="mail"> 
+        <form>
+            <label>
+              <input type="text" name="mail" placeholder="Электронная почта"> 
             </label>
-          </p>
-          <button class="button" type="submit">отправить</button> 
+          <button class="button" type="submit">Отправить</button> 
         </form>
       </section>
        </div>  
@@ -138,13 +137,14 @@
       </ul>
       <section class="copyright">
         <a class="logo-academy" href="#">
-        <img src="img/logo-htmlacademy.svg" width="100" height="100" alt="логотип академии">
+        <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="логотип академии">
         </a>
         <span>сделано в <a href="#">Academy HTML</a><span>&copy;</span> 2019</span>   
       </section>  
     </footer>
-    <section>
-      <form class="pop-up feedback" action="mailto:mother_of_tektonik@mail.ru">
+    <section class="feedback">
+      <button class="close" type="button" aria-label="закрыть">закрыть</button>
+      <form action="mailto:mother_of_tektonik@mail.ru">
         <h2>Мы обязательно вам ответим!</h2>
         <p>
           <label>
@@ -158,12 +158,11 @@
         </p>
         <p>
           <label>
-            <input type="text" name="comment" size="5" placeholder="Напишите что-нибудь...">
+            <input type="text" name="comment" placeholder="Напишите что-нибудь...">
           </label>
         </p> 
         <button class="button" type="submit">Отправить</button>   
       </form>
-      <button class="close" type="button" aria-label="закрыть">закрыть</button>
     </section> 
   </body>
 </html>
