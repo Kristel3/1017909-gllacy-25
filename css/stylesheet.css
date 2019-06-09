@@ -1,6 +1,5 @@
 body {
     min-width: 1200px;
-    min-height: 2461px;
     margin: 0 auto;
 
     font-family: "Roboto", Arial, sans-serif;
@@ -70,18 +69,16 @@ a {
     display: block;
     margin: 0 auto;
     width: 1146px;
-    padding: 9px 27px;  
+    padding: 0 27px;  
 }
 .main-navigation {
     display: flex;
     align-items: center;
-    width: 1146px;
-    margin: 0 auto;  
+    margin-top: 9px;
 }
 .main-header-logo {
     align-self: flex-start;
     width: 154px;
-    
 }
 .main-navigation li{
     list-style-type: none;
@@ -92,7 +89,6 @@ a {
 .site-navigation {
     flex-grow: 2;
     display: flex;
-   
 }
  .site-navigation > .site-navigation-item > a {
     margin-right: 25px;
@@ -325,7 +321,7 @@ a {
     top: 27px;
     right: -27px;
     width: 540px;
-    padding: 20px 11px;
+    padding: 20px 11px 47px;
     border-radius: 5px;
     box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
     background-color: #f8f7f4;
@@ -345,7 +341,7 @@ a {
     padding-left: 30px;
 }
 .basket p {
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bold;
     line-height: 1.2;
     float: right;
@@ -358,8 +354,10 @@ a {
     width: 33px;
 }
 .basket .button {
-    padding: 13px;
-    clear: both;
+    font-weight: bold;
+    line-height: 1.33;
+    padding: 18px;
+    position: relative;
 }
 .advantages {
     padding: 30px 20px 5px;
@@ -383,7 +381,6 @@ a {
     text-align: left;
 }
 .advantages-header {
-    width: 1013px;
     font-size: 24px;
     line-height: 1.25; 
     font-weight: 500;
@@ -466,7 +463,8 @@ a {
 .main-footer {
     display: flex;
     justify-content: space-around;
-    padding: 0 27px;
+    width: 1146px;
+    padding: 27px;
     margin: 0 auto;
     color: #ffffff;
     background-color: #859d8f;
@@ -593,10 +591,10 @@ a {
     text-align: left;
 }
 .time-contacts {
-    float: right;
-    width: 170px;
+    text-align: right;
 }
-.time-contacts span {
+.time-contacts a {
+    color: #ffffff;
     font-size: 22px;
     font-weight: bold;
     line-height: 1.09;
@@ -609,9 +607,10 @@ a {
     text-align: right;
 }
 .breadcrumbs {
+    padding: 0;
     width: 500px;
-    float: left;
     display: flex;
+    float: left;
     list-style: none;
 }
 .breadcrumbs a {
