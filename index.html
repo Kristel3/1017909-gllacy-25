@@ -9,65 +9,72 @@
   </head>
   <body>
     <header>
+      <div class="contaniar">
       <nav class="main-navigation">
         <a class="main-header-logo">
           <img src="img/logo.svg" width="154" height="64" alt="Логотип мороженницы 'gllacy'">
         </a>
         <ul class="site-navigation">
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="#">Доставка и Оплата</a></li> 
-          <li><a href="#">О компании</a></li>
+          <li class="site-navigation-item"><a href="catalog.html">Каталог</a>
+              <ul class="dropdown-catalog">
+                <li><a href="#"><b>Новинки</b></a></li>
+                <li><a href="catalog.html">Сливочное</a></li>
+                <li><a href="#">Щербеты</a></li>
+                <li><a href="#">Фруктовый лед</a></li>
+                <li><a href="#">Мелорин</a></li>
+              </ul>
+          </li>
+          <li class="site-navigation-item"><a href="#">Доставка и Оплата</a></li> 
+          <li class="site-navigation-item"><a href="#">О компании</a></li>
         </ul>
         <ul class="user-navigation">
-          <li>
+          <li class="user-navigation-item">
             <a href="#">Поиск</a>
+              <form class="search">
+                <label>
+                  <input type="search" name="search" placeholder="Что ищем?"> 
+                </label>
+              </form>
           </li>
-          <li>
+          <li class="user-navigation-item">
             <a href="login.html">Вход</a>
+            <section class="login-form">
+              <form action="#">
+                <p>
+                  <label>
+                    <input type="text" name="mail" placeholder="Электронная почта">  
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="password" name="password" placeholder="Пароль">
+                  </label>
+                </p>
+                <button class="button" type="submit">Войти</button>    
+                <ul class="login-link">
+                  <li><a href="#">Забыли пароль?</a></li>
+                  <li><a href="#">Новая регистрация</a></li>
+                </ul>
+              </form>
+            </section>
           </li>
-          <li>
-            <a class="basket" href="#" aria-label="корзина">Пусто</a>
+          <li class="user-navigation-item">
+            <a href="#" aria-label="корзина">Пусто</a>
           </li>  
         </ul>  
       </nav>
-      <section class="pop-up-catalog">
-        <ul class="pop-up-category">
-          <li><a href="#"><b>Новинки</b></a></li>
-          <hr>
-          <li><a href="catalog.html">Сливочное</a></li>
-          <li><a href="#">Щербеты</a></li>
-          <li><a href="#">Фруктовый лед</a></li>
-          <li><a href="#">Мелорин</a></li>
-        </ul>
-      </setion>
-        <form class="search">
-          <label>
-            <input type="search" name="search" placeholder="Что ищем?"> 
-          </label>
-        </form>
-      <section class="mail-form">
-        <form action="#">
-          <p>
-            <label>
-              <input type="text" name="mail" placeholder="Электронная почта">  
-            </label>
-          </p>
-          <p>
-            <label>
-              <input type="password" name="password" placeholder="Пароль">
-            </label>
-          </p>
-          <button class="button" type="submit">Войти</button>    
-          <ul class="login-link">
-            <li><a href="#">Забыли пароль?</a></li>
-            <li><a href="#">Новая регистрация</a></li>
-          </ul>
-        </form>
-      </section>
+      
+        
+      
+      </div>
     </header>
-    
     <main class="contaniar">
-      <section class="advantages">
+      
+        <div class="time-contacts">
+            <p>с 10 до 20, ежедневно</p>
+                <span>8 812 450-25-25</span>
+              </div>
+              <section class="advantages">
         <h1 class="advantages-header">Магазин Глэйси - это онлайн-
         и офлайн-магазин по продаже мороженого собственого
         производства на развес
@@ -107,7 +114,7 @@
           </a>
        
       </article>
-      <div class="cover">
+      <div class="border-sweet-mail">
       <section class="sweet-mail">
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе
         всего самого вкусного, что у нас происходит. Обещаем не спамить
@@ -130,9 +137,9 @@
         <li><a href="#">вконтакте</a></li>
       </ul>
       <ul class="footer-info">
-        <li><b><a href="#">Для поставщиков</a></b></li>
-        <li><a href="#">О производстве</a></li>
+        <li><a class="heart" href="#"><b>Для поставщиков</b></a></li>
         <li><a href="#">Наши документы</a></li>
+        <li><a href="#">О производстве</a></li>
         <li><a href="#">Экологические стандарты</a></li>
       </ul>
       <section class="copyright">
@@ -143,7 +150,8 @@
       </section>  
     </footer>
     <section class="feedback">
-      <button class="close" type="button" aria-label="закрыть">закрыть</button>
+      <div>
+      <button class="close" type="button" aria-label="закрыть"></button>
       <form action="mailto:mother_of_tektonik@mail.ru">
         <h2>Мы обязательно вам ответим!</h2>
         <p>
@@ -163,6 +171,7 @@
         </p> 
         <button class="button" type="submit">Отправить</button>   
       </form>
+    </div>
     </section> 
   </body>
 </html>
