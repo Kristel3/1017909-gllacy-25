@@ -15,10 +15,10 @@
             <img src="img/logo.svg" width="154" height="64" alt="Логотип мороженницы 'gllacy'">
           </a>
           <ul class="site-navigation">
-            <li><a class="site-navigation-item active" href="catalog.html">Каталог</a>
+            <li><a class="site-navigation-item">Каталог</a>
               <ul class="dropdown-catalog">
                 <li><a href="#"><b>Новинки</b></a></li>
-                <li><a class="active-dropdown" href="catalog.html">Сливочное</a></li>
+                <li><a>Сливочное</a></li>
                 <li><a href="#">Щербеты</a></li>
                 <li><a href="#">Фруктовый лед</a></li>
                 <li><a href="#">Мелорин</a></li>
@@ -39,7 +39,7 @@
               </form>
             </li>
             <li>
-              <a class="user-navigation-item" href="login.html">
+              <a class="user-navigation-item entrance" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19"><g fill="#000"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>
                 Вход
               </a>
@@ -56,21 +56,20 @@
                     </label>
                   </p>
                   <button class="button" type="submit">Войти</button>    
-                  <ul class="login-link">
-                    <li><a href="#">Забыли пароль?</a></li>
-                    <li><a href="#">Новая регистрация</a></li>
-                  </ul>
+                  <p class="login-link">
+                    <a href="#">Забыли пароль?</a>
+                    <a href="#">Новая регистрация</a>
+                  </p>
                 </form>
               </section>
             </li>
             <li>
-            <a class="user-navigation-item" class="basket-red" href="#" aria-label="корзина">2 товарa</a>
-              <div class="basket">
-                <form>
+            <a class="user-navigation-item basket-full" href="#" aria-label="корзина">2 товарa</a>
+                <form class="basket">
                   <ul class="list-basket">
                     <li>
+                      <button class="close" type="submit"></button>
                       <ul class="item-basket">
-                        <li><button class="close" type="submit"></button></li>
                         <li><img src="img/product-1.jpg" class="pic" alt="Пломбир с апельсиновым джемом"></li>
                         <li>Пломбир с апельсиновым джемом</li>
                         <li>1,5х<span>200руб.</span></li>
@@ -78,8 +77,8 @@
                       </ul>
                     </li>
                     <li>
-                      <ul class="item-basket">
-                        <li><button class="close" type="submit"></button></li>
+                      <button class="close" type="submit"></button>
+                      <ul class="item-basket">  
                         <li><img src="img/product-3.jpg" class="pic" alt="сливочно-клубничное с присыпкой из белого шоколада"></li>
                         <li>Сливочно-клубничное с присыпкой из белого шоколада</li>
                         <li>1,5x<span>300руб.</span></li>
@@ -88,9 +87,8 @@
                     </li>
                   </ul>
                   <p>Итого:750руб.</p>
-                  <a class="button" href="#">Оформить заказ</a>
-                </form>  
-              </div>
+                <a class="button" href="#">Оформить заказ</a>
+              </form>  
             </li>
           </ul>  
         </nav> 
@@ -217,8 +215,8 @@
             <p>сливочное с мятным сиропом</p>  
             <span class="price">420</span>
             <span class="weight">/кг</span></a>
+         <button class="button">Быстрый просмотр</button>
         </li>
-        <button class="button">Быстрый просмотр</button>
       </ul>
     </section>
   </main>
