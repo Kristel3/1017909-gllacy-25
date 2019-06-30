@@ -15,14 +15,17 @@
             <img src="img/logo.svg" width="154" height="64" alt="Логотип мороженницы 'gllacy'">
           </a>
           <ul class="site-navigation">
-            <li><a class="site-navigation-item">Каталог</a>
-              <ul class="dropdown-catalog">
-                <li><a href="#"><b>Новинки</b></a></li>
-                <li><a>Сливочное</a></li>
-                <li><a href="#">Щербеты</a></li>
-                <li><a href="#">Фруктовый лед</a></li>
-                <li><a href="#">Мелорин</a></li>
-              </ul>   
+            <li>
+              <a class="site-navigation-item">Каталог</a>
+              <div class="dropdown">
+                <ul class="dropdown-catalog">
+                  <li><a href="#"><b>Новинки</b></a></li>
+                  <li><a>Сливочное</a></li>
+                  <li><a href="#">Щербеты</a></li>
+                  <li><a href="#">Фруктовый лед</a></li>
+                  <li><a href="#">Мелорин</a></li>
+                </ul>
+              </div>   
             </li>   
             <li><a class="site-navigation-item" href="#">Доставка и Оплата</a></li>
             <li><a class="site-navigation-item" href="#">О компании</a></li>
@@ -37,7 +40,6 @@
                   <input type="search" name="search" placeholder="Что ищем?"> 
                 </label>
               </form>
-              <div class="overlay"></div>
             </li>
             <li>
               <a class="user-navigation-item entrance" href="#">
@@ -107,18 +109,19 @@
       <form class="filter">
         <div class="list-filter">
           <fieldset class="fieldset">
-            <legend class="title-filter">Сортировка:</legend> 
-            <label>
-              <select class="item-filter filter-sorting" name="sorting[]">
-                <option value="by popularity">по популярности</option>
-                <option value="inexpensive">сначала недорогие</option>
-                <option value="expensive">сначала дорогие</option>
-                <option value="fat content">по жирности</option>
-              </select>
-            </label>
+          <legend class="title-filter">Сортировка:</legend> 
+            <div class="sort-arrow">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#ffffff" d="M5.5 10L0 0h11"/></svg>
+            </div>
+            <select class="item-filter filter-sorting" name="sorting[]">
+              <option value="by popularity">по популярности</option>
+              <option value="inexpensive">сначала недорогие</option>
+              <option value="expensive">сначала дорогие</option>
+              <option value="fat content">по жирности</option>
+            </select>
           </fieldset>
-          <fieldset class="fieldset filter-range">
-            <div class="price-controls title-filter">Цена:
+          <fieldset class="fieldset filter-range-title">
+            <div class="price-controls">Цена:
               <label class="min-price">
                 <input type="text" name="min-price" value="100">руб.
               </label>
