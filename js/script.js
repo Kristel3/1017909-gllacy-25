@@ -59,6 +59,9 @@ window.addEventListener("keydown", function (evt) {
     if (popup.classList.contains("modal-show")) {
       popup.classList.remove("modal-show");
       popup.classList.remove("modal-error");
+      bk_overlay.classList.contains("overlay");
+      bk_overlay.classList.remove("overlay");
+
     }
   }
 })

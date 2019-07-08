@@ -5,7 +5,7 @@
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/stylesheet-minimezed.css" rel="stylesheet">
+    <link href="css/stylesheet.css" rel="stylesheet">
   </head>
   <body>
     <div class="contaniar">
@@ -158,47 +158,29 @@
           <fieldset class="fieldset">
             <legend class="title-filter">Жирность</legend>
             <div class="item-filter radio-filter">
-              <label>
-              <input aria-label="0%" type="radio" name="fat content" class="visually-hidden" value="0%">
-              <span class="radio-indicator">0%</span>
-              </label>
-              <label class="radio-item" tabindex="0">
-              <input aria-label="до 10%" type="radio" name="fat content" class="visually-hidden" value="to 10%">
-              <span class="radio-indicator">до 10%</span>
-              </label>
-              <label class="radio-item" tabindex="0">
-              <input aria-label="до 30%" type="radio" name="fat content" class="visually-hidden" value="to 30%">
-              <span class="radio-indicator">до 30%</span>
-              </label>
-              <label class="radio-item" tabindex="0">
-              <input aria-label="выше 30%" type="radio" name="fat content" class="visually-hidden" value="above 30%">
-              <span class="radio-indicator">выше 30%</span>
-              </label>
+              <input id="filter-0%" aria-label="0%" type="radio" name="fat content" class="visually-hidden filter-input filter-input-radio" value="0%">
+              <label for="filter-0%" class="radio-indicator">0%</label>
+              <input id="filter-to10%" aria-label="до 10%" type="radio" name="fat content" class="visually-hidden filter-input filter-input-radio" value="to 10%">
+              <label for="filter-to10%" class="radio-indicator">до 10%</label>
+              <input id="filter-to30%" aria-label="до 30%" type="radio" name="fat content" class="visually-hidden filter-input-radio filter-input" value="to 30%">
+              <label for="filter-to30%" class="radio-indicator">до 30%</label>
+              <input id="filter-above30%" aria-label="выше 30%" type="radio" name="fat content" class="visually-hidden filter-input filter-input-radio" value="above 30%">
+              <label for="filter-above30%" class="radio-indicator">выше 30%</label>
             </div>
           </fieldset>
           <fieldset class="fieldset">
             <legend class="title-filter">Наполнители:</legend>
             <div class="item-filter checkbox-filter">
-              <label>
-              <input aria-label="шоколадные" type="checkbox" name="fillers" class="visually-hidden" value="chocolate">
-              <span class="checkbox-indicator">шоколадные</span>
-              </label>
-              <label>
-              <input aria-label="сахарные присыпки" type="checkbox" name="fillers" class="visually-hidden" value="sugar powders">
-              <span class="checkbox-indicator">сахарные присыпки</span>
-              </label>
-              <label>
-              <input aria-label="фрукты" type="checkbox" name="fillers" class="visually-hidden" value="fruits">
-              <span class="checkbox-indicator">фрукты</span>
-              </label>
-              <label>
-              <input aria-label="сиропы" type="checkbox" name="fillers" class="visually-hidden" value="syrups">
-              <span class="checkbox-indicator">сиропы</span>
-              </label>
-              <label>
-              <input aria-label="джемы" type="checkbox" name="fillers" class="visually-hidden" value="jams">
-              <span class="checkbox-indicator">джемы</span>
-              </label>
+              <input id="chocolate" aria-label="шоколадные" type="checkbox" name="fillers" class="visually-hidden filter-input filter-input-checkbox" value="chocolate">
+              <label for="chocolate" class="checkbox-indicator">шоколадные</label>
+              <input id="sugar-powders" aria-label="сахарные присыпки" type="checkbox" name="fillers" class="visually-hidden filter-input filter-input-checkbox" value="sugar powders">
+              <label for="sugar-powders" class="checkbox-indicator">сахарные присыпки</label>
+              <input id="fruits" aria-label="фрукты" type="checkbox" name="fillers" class="visually-hidden filter-input filter-input-checkbox" value="fruits">
+              <label for="fruits" class="checkbox-indicator">фрукты</label>
+              <input id="syrups" aria-label="сиропы" type="checkbox" name="fillers" class="visually-hidden filter-input filter-input-checkbox" value="syrups">
+              <label for="syrups" class="checkbox-indicator">сиропы</label>
+              <input id="jams" aria-label="джемы" type="checkbox" name="fillers" class="visually-hidden filter-input filter-input-checkbox" value="jams">
+              <label for="jams" class="checkbox-indicator">джемы</label>
             </div>
           </fieldset>
         </div>
@@ -214,7 +196,7 @@
               <span class="price">310</span>
               <span class="weight">/кг</span>
             </a>
-            <a href="#" class="button">Быстрый просмотр</a>
+            <a href="#" class="button button-catalog">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
             <a href="#">
@@ -223,7 +205,7 @@
               <span class="price">380</span>
               <span class="weight">/кг</span>
             </a>
-            <a href="#" class="button">Быстрый просмотр</a>
+            <a href="#" class="button button-catalog">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
             <a href="#">
@@ -232,7 +214,7 @@
               <span class="price">355</span>
               <span class="weight">/кг</span>
             </a>
-            <a href="#" class="button">Быстрый просмотр</a>
+            <a href="#" class="button button-catalog">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
             <a href="#">
@@ -241,7 +223,7 @@
               <span class="price">415</span>
               <span class="weight">/кг</span>
             </a>
-            <a href="#" class="button">Быстрый просмотр</a>
+            <a href="#" class="button button-catalog">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
             <a href="#">
@@ -250,7 +232,7 @@
               <span class="price">325</span>
               <span class="weight">/кг</span>
             </a>
-            <a href="#" class="button">Быстрый просмотр</a>
+            <a href="#" class="button button-catalog">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
             <a href="#">
@@ -259,7 +241,7 @@
               <span class="price">410</span>
               <span class="weight">/кг</span>
             </a>
-            <a href="#" class="button">Быстрый просмотр</a>
+            <a href="#" class="button button-catalog">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
             <a href="#">
@@ -268,7 +250,7 @@
               <span class="price">375</span>
               <span class="weight">/кг</span>
             </a>
-            <a href="#" class="button">Быстрый просмотр</a>
+            <a href="#" class="button button-catalog">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
             <a href="#">
@@ -277,7 +259,7 @@
               <span class="price">320</span>
               <span class="weight">/кг</span>
             </a>
-            <a href="#" class="button">Быстрый просмотр</a>
+            <a href="#" class="button button-catalog">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
             <a href="#">
@@ -286,7 +268,7 @@
               <span class="price">440</span>
               <span class="weight">/кг</span>
             </a>
-            <a href="#" class="button">Быстрый просмотр</a>
+            <a href="#" class="button button-catalog">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
             <a href="#">
@@ -295,7 +277,7 @@
               <span class="price">435</span>
               <span class="weight">/кг</span>
             </a>
-            <a href="#" class="button">Быстрый просмотр</a>
+            <a href="#" class="button button-catalog">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
             <a href="#">
@@ -304,7 +286,7 @@
               <span class="price">355</span>
               <span class="weight">/кг</span>
             </a>
-            <a href="#" class="button">Быстрый просмотр</a>
+            <a href="#" class="button button-catalog">Быстрый просмотр</a>
           </li>
           <li class="catalog-item">
             <a href="#">
@@ -313,7 +295,7 @@
               <span class="price">420</span>
               <span class="weight">/кг</span>
             </a>
-            <a href="#" class="button">Быстрый просмотр</a>
+            <a href="#" class="button button-catalog">Быстрый просмотр</a>
           </li>
         </ul>
       </section>
@@ -367,8 +349,8 @@
       </ul>
       <ul class="footer-info">
         <li><b><a href="#">Для поставщиков</a></b></li>
-        <li><a href="#">О производстве</a></li>
         <li><a href="#">Наши документы</a></li>
+        <li><a href="#">О производстве</a></li>
         <li><a href="#">Экологические стандарты</a></li>
       </ul>
       <section class="copyright">
